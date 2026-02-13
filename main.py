@@ -59,7 +59,7 @@ def render_digit(bIn):
 
 
 
-def printSequence(sequenceList: Tuple[str, ...] ,Tdt = .5,repCnt = 2 ):
+def printSequence(sequenceList: Tuple[str, ...] ,Tdt = .5,repCnt = 1 ):
     """
     Docstring for printSequence
     
@@ -80,21 +80,21 @@ def printSequence(sequenceList: Tuple[str, ...] ,Tdt = .5,repCnt = 2 ):
         
         
 
-test_digits = (
-    "1111110",  # 0
-    "0110000",  # 1
-    "1101101",  # 2
-    "1111001",  # 3
-    "0110011",  # 4
-    "1011011",  # 5
-    "1011111",  # 6
-    "1110000",  # 7
+test_digits_rtl = [
+    "0111111",  # 0 → LSB is a (rightmost)
+    "0000110",  # 1
+    "1011011",  # 2
+    "1001111",  # 3
+    "1100110",  # 4
+    "1101101",  # 5
+    "1111101",  # 6
+    "0000111",  # 7
     "1111111",  # 8
-    "1111011"   # 9
-)
+    "1101111"   # 9
+]
 
 
-printSequence(test_digits)
+printSequence(test_digits_rtl)
 
 
 
